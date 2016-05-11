@@ -1,0 +1,412 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Ashram</title>
+<link href="../css/ashram.css" rel="stylesheet" type="text/css">
+<style>
+@import url(http://fonts.googleapis.com/css?family=roboto:400,400italic,600,700,800);
+
+*,
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+label,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section { display: block; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html { -webkit-font-smoothing: antialiased; }
+
+a {
+  color: #e1f4f5;
+  text-decoration: none;
+}
+
+a:hover { color: #BA0707; }
+
+body {
+  color: #e1f4f5;
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:12px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  width: 100%;
+}
+
+nav {
+  display: block;
+  background-color:#FC6D58;
+}
+
+.menu { display: block; }
+
+.menu li {
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+  
+}
+
+.menu li:first-child { margin-left: 0; }
+
+.menu li a {
+  font-weight: 600;
+  text-decoration: none;
+  padding: 27px 45px;
+  display: block;
+  color: #FFF;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.menu li a:hover,
+.menu li:hover>a {
+  color: #000;
+  background: #FC6D58;
+}
+
+.menu ul {
+  visibility: hidden;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  width: 170px;
+  position: absolute;
+  left: 0px;
+  background: #fff;
+  z-index: 99;
+  transform: translate(0, 20px);
+  transition: all 0.2s ease-out;
+}
+
+.menu ul:after {
+  bottom: 100%;
+  left: 20%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.menu ul li {
+  display: block;
+  float: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a {
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+  color: #797979;
+  background: #fff;
+}
+
+.menu ul li a:hover,
+.menu ul li:hover>a {
+  background: #FC6D58;
+  color: #fff;
+}
+
+.menu li:hover>ul {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.menu ul ul {
+  left: 169px;
+  top: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(20px, 20px);
+  transition: all 0.2s ease-out;
+}
+
+.menu ul ul:after {
+  left: -6px;
+  top: 10%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #fff;
+  border-width: 6px;
+  margin-top: -6px;
+}
+
+.menu li>ul ul:hover {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.responsive-menu {
+  display: none;
+  width: 100%;
+  padding: 20px 15px;
+  background: #E95546;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.responsive-menu:hover {
+  background: #E95546;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 801px) and (max-width: 979px) {
+
+.menu{
+	background: #FC6D58;
+	margin-top:7px;
+	}
+
+.mainWrap { width:100%;
+ }
+
+.menu ul { top: 7px;
+ }
+
+.menu ul li{width:10%;}
+
+.menu li a { font-size:10px;
+  padding: 20px 5px;
+  color:#FFF;
+ }
+
+.menu li a:hover{
+	color:#000;
+	}
+
+}
+ @media (max-width: 800px) {
+
+.mainWrap {
+  width: auto;
+  padding: 50px 20px;
+}
+
+.menu { display: none; }
+
+.responsive-menu { display: block; }
+
+nav {
+  margin: 0;
+  background: none;
+}
+
+.menu li {
+  display: block;
+  margin: 0;
+}
+
+.menu li a {
+  background: #fff;
+  color: #797979;
+}
+
+.menu li a:hover,
+.menu li:hover>a {
+  background: #FC6D58;
+  color: #fff;
+}
+
+.menu ul {
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: initial;
+}
+
+.menu li:hover>ul {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  transform: initial;
+}
+
+.menu ul ul {
+  left: 0;
+  transform: initial;
+}
+
+.menu li>ul ul:hover { transform: initial; }
+}
+</style>
+</head>
+<body>
+<div class="big_container">
+<div class="menu2">
+<nav> <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i> Menu</a>
+  <ul class="menu">
+    <li><a class="homer" href="index.html"><i class="fa fa-home"></i>HOME</a>
+     </li>
+            <li><a  href="calender.html"><i class="fa fa-envelope"></i>ASHRAM CALENDER/DAILY SCHEDULE </a></li>
+    <li><a  href="books.html"><i class="fa fa-tags"></i>BOOKS</a>
+        </li>
+    <li><a  href="quotations.html"><i class="fa fa-camera"></i>QUOTES BY GURUJI</a>
+        </li>
+    <li><a  href="upcoming_events.html"><i class="fa fa-user"></i>UPCOMING EVENTS</a></li>
+    
+    <li><a  href="contact_us.html"><i class="fa fa-envelope"></i>CONTACT US</a></li>
+  </ul>
+</nav>
+<div class="jquery-script-ads" align="center"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script> 
+<script>
+$(document).ready(function(){ 
+	var touch 	= $('#resp-menu');
+	var menu 	= $('.menu');
+ 
+	$(touch).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var w = $(window).width();
+		if(w > 767 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}
+	});
+	
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</div>
+<div class="heading1">Shri Siddheshwar Baba</div>
+<div class="heading2">(Dr. B.S. Goel)</div>
+<div class="heading3">(The following lines have been taken from ..........)</div>
+<div class="pic"><img src="../images/aboutguruji.jpg" height="205" width="280"></div>
+<div class="content">
+Right from 1975,when my Third Eye opened and kundalini got activated,I kept on getting powerful mental waves off and on to 
+start some kind of ashram which should in times come,emerge into a centre for doing pyscho-spiritual and religious work.With 
+passage of time,I ceased to see any purpose of my life except this.It was clear to me that an ashram was going to be established
+some day and further it was going to be one of the main centres of religio-spiritual work which would be established by the 
+disciples of Bhagwan Sri Sathya Sai Baba in various parts of country from where spiritual waves would rise in the future
+.<br><br>
+
+In the first week of Januray 1982,a sadhaka came up with a suggestion of forming a registered society and thus Third Eye 
+Foundation of India was founded.The name was preffered for three reasons.Firtly it represented a truth about my experiences.
+Secondly,in my books i have often described Baba as "Third Eye" of the whole universe who sees everything,everywhere,every moment.
+Thirdly,it was not my desire to create any confusion about the organisation and management,resulting in any kind of conflict
+with persons working in various organisations of Baba.
+<br><br>
+
+I knew perfectly that His Will is behind all the work.I was absolutely clear in my mind that the institution was not being 
+built to compete with anyone,least of all with Sri Sathya Sai Baba organisations.To take a crude example,it would be a shop of
+a beloved son to sell the goods manufactured by the Father in order to extend the sale of goods with the inner permission of the
+Father.Although the ashram would be raised by the visible body of Dr.B.S.Goel and certain devoted sadhakas,yet it was obvious to me
+that in coming times it would be recognised as creation of Bhagwan Sri Sathya Sai Baba.So as far as financial support is concerned
+He would Himself see to it.
+<br><br>
+
+While preparing the draft of institution it was tentatively decided that we should consult one or two documents of Registered 
+Societies and Trust.Thus the Memorandam of association of "Kingdom of Sathya Sai" was kept on mind while framing the document.
+Finally the society was approved and registered on June15,1982.<br><br>
+It was then that a Land  Acquisition Committee was formed by Managing Committee of Third Eye Foundation of India for specific 
+purpose of selecting and purchasing a good piece of land for ashram.Right from the day of its constitution,the committee visited
+many places like Rishikesh,Garhmukteshwar,Baghpat,Bijnor,Meerat etc but nothing concrete happened.While we were not succeeding in
+geeting suitable land for the ashram an increasing no of sadhakas were getting dreams about the ashram and work going on.
+<br><br>
+I sent an application to my office in september 1985 for a lonf leave of about four and a half months with clear intention that i 
+would not join the office again unless forced by some rules to do so.Instead i would seek voluntarly retirenment.During this
+period of leave i would sit home and do some religio-spiritual work on lines i was already doing and wait for aquisation of 
+land in which case i would start the work for the ashram otherwise i would seek a kutiya(hut) on the bank of river Ganga in
+Rishikesh and shift to the hut thus vacating my office residence in delhi.
+<br><br>
+
+Will i change my name and dress in accordance with tradition of yogis who put saffron clothes? During last so many years various
+sadhakas have addressed me with different names.Some of these were Nathji,Guriji,Swamiji,Jnanamurthy Dr.B.S.Goel.Most of the 
+people addressed me as Guruji.Many of sadhakas also suggested me to change my name to Sathyanandaji or Jnanaanandaji.But i 
+knew in my heart that these all names donot represent the inner reality or truth.So i decided at heart to let all sadhakas call
+me whatever they like.As far as my clothes were concerned i decided not to change my traditional clothes whih i used to wear
+at office(western dress) or at home(Kurta-pajama) for i clearly knew that body was false.The most obvious thing i want to convey 
+here that the external names,clothes and other paraphernalia like rosary etc. have no relationship with the inner realisation
+I also at heart decided that whenever such an ashram comes up i would depend on my earning which would accure to me from my 
+pension etc.While i would give everything to ashram that i can,i would never take anything from it for my living.
+
+
+
+
+
+
+</div>
+</div>
+</body>
+</html>

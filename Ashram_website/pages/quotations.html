@@ -1,0 +1,412 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Magical Words of Guruji</title>
+<link href="../css/quotations.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<link href="../css/animate.min.css" rel="stylesheet" type="text/css">
+<script src="../js/prefixfree.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<style>
+@import url(http://fonts.googleapis.com/css?family=roboto:400,400italic,600,700,800);
+
+*,
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+label,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section { display: block; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html { -webkit-font-smoothing: antialiased; }
+
+a {
+  color: #e1f4f5;
+  text-decoration: none;
+}
+
+a:hover { color: #BA0707; }
+
+body {
+  color: #e1f4f5;
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:12px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  width: 100%;
+}
+
+nav {
+  display: block;
+  background-color:#FC6D58;
+}
+
+.menu { display: block; }
+
+.menu li {
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+  
+}
+
+.menu li:first-child { margin-left: 0; }
+
+.menu li a {
+  font-weight: 600;
+  text-decoration: none;
+  padding: 27px 45px;
+  display: block;
+  color: #FFF;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.menu li a:hover,
+.menu li:hover>a {
+  color: #000;
+  background: #FC6D58;
+}
+
+.menu ul {
+  visibility: hidden;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  width: 170px;
+  position: absolute;
+  left: 0px;
+  background: #fff;
+  z-index: 99;
+  transform: translate(0, 20px);
+  transition: all 0.2s ease-out;
+}
+
+.menu ul:after {
+  bottom: 100%;
+  left: 20%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.menu ul li {
+  display: block;
+  float: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a {
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+  color: #797979;
+  background: #fff;
+}
+
+.menu ul li a:hover,
+.menu ul li:hover>a {
+  background: #FC6D58;
+  color: #fff;
+}
+
+.menu li:hover>ul {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.menu ul ul {
+  left: 169px;
+  top: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(20px, 20px);
+  transition: all 0.2s ease-out;
+}
+
+.menu ul ul:after {
+  left: -6px;
+  top: 10%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #fff;
+  border-width: 6px;
+  margin-top: -6px;
+}
+
+.menu li>ul ul:hover {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.responsive-menu {
+  display: none;
+  width: 100%;
+  padding: 20px 15px;
+  background: #E95546;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.responsive-menu:hover {
+  background: #E95546;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 801px) and (max-width: 979px) {
+
+.menu{
+	background: #FC6D58;
+	margin-top:7px;
+	}
+
+.mainWrap { width:100%;
+ }
+
+.menu ul { top: 7px;
+ }
+
+.menu ul li{width:10%;}
+
+.menu li a { font-size:10px;
+  padding: 20px 5px;
+  color:#FFF;
+ }
+
+.menu li a:hover{
+	color:#000;
+	}
+
+}
+ @media (max-width: 800px) {
+
+.mainWrap {
+  width: auto;
+  padding: 50px 20px;
+}
+
+.menu { display: none; }
+
+.responsive-menu { display: block; }
+
+nav {
+  margin: 0;
+  background: none;
+}
+
+.menu li {
+  display: block;
+  margin: 0;
+}
+
+.menu li a {
+  background: #fff;
+  color: #797979;
+}
+
+.menu li a:hover,
+.menu li:hover>a {
+  background: #FC6D58;
+  color: #fff;
+}
+
+.menu ul {
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: initial;
+}
+
+.menu li:hover>ul {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  transform: initial;
+}
+
+.menu ul ul {
+  left: 0;
+  transform: initial;
+}
+
+.menu li>ul ul:hover { transform: initial; }
+}
+</style>
+
+<script src="../js/wow.min.js"></script>
+<script>
+ 	new WOW().init();
+	</script>
+
+
+</head>
+
+<body>
+<div class="back_container">
+<div class="back_box"><img src="../images/ga1.jpg" height="540" width="700"></div>
+<div class="back_box"><img src="../images/ga2.jpg" height="540" width="700"></div>
+<div class="back_box"><img src="../images/ga3.jpg" height="540" width="700"></div>
+<div class="back_box"><img src="../images/ga4.jpg" height="540" width="700"></div>
+<div class="back_box"><img src="../images/ga5.jpg" height="540" width="700"></div>
+<div class="back_box"><img src="../images/ga6.jpg" height="540" width="700"></div>
+<div class="back_box"><img src="../images/ga1.jpg" height="540" width="700"></div>
+<div class="back_box"><img src="../images/ga2.jpg" height="540" width="700"></div>
+<div class="back_box"><img src="../images/ga3.jpg" height="540" width="700"></div>
+<div class="back_box"><img src="../images/ga4.jpg" height="540" width="700"></div>
+<div class="back_box"><img src="../images/ga5.jpg" height="540" width="700"></div>
+<div class="back_box"><img src="../images/ga6.jpg" height="540" width="700"></div>
+</div>
+<div class="front_container">
+<div class="menu2">
+<nav> <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i> Menu</a>
+  <ul class="menu">
+    <li><a class="homer" href="index.html"><i class="fa fa-home"></i>HOME</a>
+     </li>
+            <li><a  href="calender.html"><i class="fa fa-envelope"></i>ASHRAM CALENDER/DAILY SCHEDULE </a></li>
+    <li><a  href="books.html"><i class="fa fa-tags"></i>BOOKS</a>
+        </li>
+    <li><a  href="quotations.html"><i class="fa fa-camera"></i>QUOTES BY GURUJI</a>
+        </li>
+    <li><a  href="upcoming_events.html"><i class="fa fa-user"></i>UPCOMING EVENTS</a></li>
+    
+    <li><a  href="contact_us.html"><i class="fa fa-envelope"></i>CONTACT US</a></li>
+  </ul>
+</nav>
+<div class="jquery-script-ads" align="center"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script> 
+<script>
+$(document).ready(function(){ 
+	var touch 	= $('#resp-menu');
+	var menu 	= $('.menu');
+ 
+	$(touch).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var w = $(window).width();
+		if(w > 767 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}
+	});
+	
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</div>
+<div class="heading">Magical Words of Siddheshwar Baba(Guruji)</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Bad  qualities are soldiers of ignorance and Good qualities are soldier of wisdom or  awareness&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Spirituality  is swimming against the current&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;God is abstract  but Guru is tangible&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Good is  good bad is bad&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&quot;This world is a projection of God . It emerges from  God and merges back into God&quot; .</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Godward  path is the highest path&rdquo; .</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;He who  can conquer desire for physical pleasure, can conquer death&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Animal (nature of man) must be killed to make  room for (development of) spiritual man&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;When a  spiritual Sadhak has vanquished all his senses appetites , his body become a  pure  and proper vessel to hold Atma&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;No saint attained perfection without complete  purification of his mind&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Even the  slightest temptation on the path of Sadhna is a test of your moral strength steadfastness  and preservance . If you fail, you fall; Therefore be vigilant&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;There is  a hidden and innate power in chastity&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Purification , illumination ,and perfection are  three states On The Spiritual Path. It is the path that leads one from senses  to the soul. Only he can tread this path, &nbsp;who can declare war on desires,  one has to crucify the lust of flesh&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;The soul loves purity. He who is ever pure,  reaches the goal&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Fascination by the body is the death of  liberation of a seeker&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;As the dawning of the day is simultaneous with  the passing of night, search the dawning of true knowledge simultaneous with  the passing of Desire&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;He, who rejoices in the objects of senses and  passion is like a thirsty man, who drink poison to quench his thirst&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Divinity  starts unfolding inside a man as soon as he throws out Desire&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;To attain  perfect purity, one has to become absolutely passion free in thought, speech  and action&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Views can be effective only when they are the  outcome of an inner conviction&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Only when the tumult of the senses is stilled  can the external wisdom be revealed to one, who seeks mystic communion with God&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Without the grace of a true Guru, it is utterly  impossible to attain atma-gyan or self-realization&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;No one can serve the flesh and spirit simultaneously&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Like the light of day and darkness of night, as  both merge in Twilight ,so all preferences and abstinences must merge in  Atambhav&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Mark! &nbsp;any act that is not perfectly pure  will lead to spiritual suicide&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Unless a person is absolutely chaste, &nbsp;he  should not hope for salvation. Blessed are the undefiled, sense gratification  renders one utterly unfit for spiritual life&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;Over-powering fascination by the body must be  rejected resolutely to get admission in the courtyard of your beloved Isht&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;You are merely a witness in this pulsating play  of creation, you are an unconditioned seer of this cosmic drama,&nbsp;you are  ever pure, birthless and deathless spirit&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;A guileless, humble and simple person is God's  Beloved&rdquo;.</div>
+<div class="quot_box wow flipInX" data-wow-delay="0.1s">&ldquo;When, a  thought holds on to an object, it is bondage. Reject all imaginative thoughts.  Fantasies can drag you into the foulest mud&rdquo;.</div>
+</div>
+</body>
+</html>

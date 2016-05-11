@@ -1,0 +1,277 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+.back_container{
+	width:100%;
+	height:auto;
+	float:left;
+	position:absolute;
+	z-index:0;
+	opacity:0.5;
+	}
+	
+.back_box{
+	width:50%;
+	height:auto;
+	float:left;
+	}
+	
+.front_container{
+	position:absolute;
+	z-index:1;
+	width:100%;
+	height:auto;
+	float:left;
+	}	
+
+
+.menu2{
+	width:100%;
+	margin-left:0%;
+	height:auto;
+	float:left;
+	margin-top:0px;
+	}
+
+.heading{
+	width:100%;
+	height:auto;
+	float:left;
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	font-size:36px;
+	font-weight:bolder;
+	color:#C00;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+		
+		
+.quot_box{
+	width: 80%;
+	float: left;
+	height:auto;
+	margin-left: 10%;
+	padding:20px 2px;
+	margin-top:30px;
+	background-image:url(../images/season_shade.jpg);
+	border-radius:20px;
+	overflow:hidden;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#FFF;
+	text-align:center;
+	}		
+		
+@media only screen 
+  and (min-device-width:600px) 
+  and (max-device-width:800px)
+{
+	
+body{
+	background-color:#CCC;
+	}
+.back_box img{
+	display:none;	
+	}
+
+.menu2{
+	width:100%;
+	margin-left:0%;
+	height:auto;
+	text-align:center;
+	float:left;
+	margin-top:0px;
+	}
+
+
+.heading{
+	width:100%;
+	height:auto;
+	float:left;
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	font-size:30px;
+	font-weight:bolder;
+	color:#C00;
+	margin-top:50px;
+	margin-bottom:50px;
+}
+		
+		
+.quot_box{
+	width:90%;
+	float: left;
+	height:auto;
+	margin-left:5%;
+	padding:20px 2px;
+	margin-top:30px;
+	background-image:url(../images/season_shade.jpg);
+	border-radius:20px;
+	overflow:hidden;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:13px;
+	color:#FFF;
+	text-align:center;
+	}		
+
+	
+}
+
+@media only screen 
+  and (min-device-width:481px) 
+  and (max-device-width:599px)
+{
+	
+body{
+	background-color:#CCC;
+	}
+.back_box img{
+	display:none;	
+	}
+
+
+.heading{
+	width:100%;
+	height:auto;
+	float:left;
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	font-size:24px;
+	font-weight:bolder;
+	color:#C00;
+	margin-top:40px;
+	margin-bottom:40px;
+}
+		
+		
+.quot_box{
+	width:90%;
+	float: left;
+	height:auto;
+	margin-left:5%;
+	padding:20px 2px;
+	margin-top:20px;
+	background-image:url(../images/season_shade.jpg);
+	border-radius:20px;
+	overflow:hidden;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	color:#FFF;
+	text-align:center;
+	}		
+
+	
+}
+
+@media only screen 
+  and (min-device-width:400px) 
+  and (max-device-width:480px)
+{
+	
+body{
+	background-color:#CCC;
+	}
+.back_box img{
+	display:none;	
+	}
+
+.menu2{
+	width:100%;
+	margin-left:0%;
+	height:auto;
+	text-align:center;
+	float:left;
+	margin-top:0px;
+	}
+
+
+.heading{
+	width:100%;
+	height:auto;
+	float:left;
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	font-size:22px;
+	font-weight:bolder;
+	color:#C00;
+	margin-top:40px;
+	margin-bottom:40px;
+}
+		
+		
+.quot_box{
+	width:95%;
+	float: left;
+	height:auto;
+	margin-left:2.5%;
+	padding:20px 2px;
+	margin-top:20px;
+	background-image:url(../images/season_shade.jpg);
+	border-radius:20px;
+	overflow:hidden;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:11px;
+	color:#FFF;
+	text-align:center;
+	}		
+
+	
+}
+
+@media only screen 
+  and (min-device-width:320px) 
+  and (max-device-width:399px)
+{
+	
+body{
+	background-color:#CCC;
+	}
+.back_box img{
+	display:none;	
+	}
+
+.menu2{
+	width:100%;
+	margin-left:0%;
+	height:auto;
+	text-align:center;
+	float:left;
+	margin-top:0px;
+	}
+
+
+.heading{
+	width:100%;
+	height:auto;
+	float:left;
+	text-align:center;
+	font-family:"Times New Roman", Times, serif;
+	font-size:19px;
+	font-weight:bolder;
+	color:#C00;
+	margin-top:40px;
+	margin-bottom:40px;
+}
+		
+		
+.quot_box{
+	width:95%;
+	float: left;
+	height:auto;
+	margin-left:2.5%;
+	padding:20px 2px;
+	margin-top:20px;
+	background-image:url(../images/season_shade.jpg);
+	border-radius:20px;
+	overflow:hidden;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;
+	color:#FFF;
+	text-align:center;
+	}		
+
+	
+}

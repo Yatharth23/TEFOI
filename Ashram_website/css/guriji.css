@@ -1,0 +1,254 @@
+*{
+	margin:0;
+	padding:0;
+}
+
+body{
+	background-color:#e1f4f5;
+		}
+
+.big_container{
+	width:100%;
+	float:left;
+	height:auto;
+	}
+
+.menu2{
+	width:100%;
+	margin-left:0%;
+	height:auto;
+	text-align:center;
+	float:left;
+	margin-top:0px;
+	}
+
+
+.heading1{
+	width:100%;
+	height:auto;
+	font-family:"Times New Roman", Times, serif;
+	color:#F30;
+	font-size:28px;
+	margin-top:40px;
+	text-align:center;
+	font-weight:bolder;
+	}
+	
+.heading2{
+	font-style:italic;
+	width:100%;
+	height:auto;
+	font-family:"Times New Roman", Times, serif;
+	color:#F30;
+	font-size:22px;
+	margin-top:10px;
+	text-align:center;
+	}	
+	
+.pic{
+	width:20%;
+	margin-left:40%;
+	height:205px;
+	background-image:url(../images/aboutguruji.jpg);
+	float:left;
+	margin-top:30px;
+	}	
+
+.content{
+	width:80%;
+	height:auto;
+	margin-left:10%;
+	margin-top:30px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:16px;
+	color:#000;
+	float:left;
+	text-align:left;
+	margin-bottom:20px;
+	}	
+
+@media only screen 
+  and (min-device-width: 481px) 
+  and (max-device-width: 800px)
+{
+
+.menu2{
+	width:100%;
+	margin-left:0%;
+	height:auto;
+	text-align:center;
+	float:left;
+	margin-top:0px;
+	}
+
+
+.heading1{
+	width:100%;
+	height:auto;
+	font-family:"Times New Roman", Times, serif;
+	color:#F30;
+	font-size:24px;
+	margin-top:40px;
+	text-align:center;
+	font-weight:bolder;
+	}
+	
+.heading2{
+	font-style:italic;
+	width:100%;
+	height:auto;
+	font-family:"Times New Roman", Times, serif;
+	color:#F30;
+	font-size:20px;
+	margin-top:10px;
+	text-align:center;
+	}	
+	
+.pic{
+	width:20%;
+	margin-left:40%;
+	height:205px;
+	background-image:url(../images/aboutguruji.jpg);
+	float:left;
+	margin-top:30px;
+	}	
+
+.content{
+	width:80%;
+	height:auto;
+	margin-left:10%;
+	margin-top:30px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:14px;
+	color:#000;
+	float:left;
+	text-align:left;
+	margin-bottom:20px;
+	}	
+	
+	
+}
+
+@media only screen 
+  and (min-device-width: 400px) 
+  and (max-device-width: 480px)
+{
+
+.menu2{
+	width:100%;
+	margin-left:0%;
+	height:auto;
+	text-align:center;
+	float:left;
+	margin-top:0px;
+	}
+
+
+.heading1{
+	width:100%;
+	height:auto;
+	font-family:"Times New Roman", Times, serif;
+	color:#F30;
+	font-size:20px;
+	margin-top:40px;
+	text-align:center;
+	font-weight:bolder;
+	}
+	
+.heading2{
+	font-style:italic;
+	width:100%;
+	height:auto;
+	font-family:"Times New Roman", Times, serif;
+	color:#F30;
+	font-size:16px;
+	margin-top:10px;
+	text-align:center;
+	}	
+	
+.pic{
+	width:20%;
+	margin-left:40%;
+	height:205px;
+	background-image:url(../images/aboutguruji.jpg);
+	float:left;
+	margin-top:30px;
+	}	
+
+.content{
+	width:80%;
+	height:auto;
+	margin-left:10%;
+	margin-top:30px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:12px;
+	color:#000;
+	float:left;
+	text-align:left;
+	margin-bottom:20px;
+	}	
+	
+	
+}
+
+@media only screen 
+  and (min-device-width: 320px) 
+  and (max-device-width: 399px)
+{
+
+.menu2{
+	width:100%;
+	margin-left:0%;
+	height:auto;
+	text-align:center;
+	float:left;
+	margin-top:0px;
+	}
+
+
+.heading1{
+	width:100%;
+	height:auto;
+	font-family:"Times New Roman", Times, serif;
+	color:#F30;
+	font-size:18px;
+	margin-top:40px;
+	text-align:center;
+	font-weight:bolder;
+	}
+	
+.heading2{
+	font-style:italic;
+	width:100%;
+	height:auto;
+	font-family:"Times New Roman", Times, serif;
+	color:#F30;
+	font-size:14px;
+	margin-top:10px;
+	text-align:center;
+	}	
+	
+.pic{
+	width:20%;
+	margin-left:40%;
+	height:205px;
+	background-image:url(../images/aboutguruji.jpg);
+	float:left;
+	margin-top:30px;
+	}	
+
+.content{
+	width:80%;
+	height:auto;
+	margin-left:10%;
+	margin-top:30px;
+	font-family:Verdana, Geneva, sans-serif;
+	font-size:10px;
+	color:#000;
+	float:left;
+	text-align:left;
+	margin-bottom:20px;
+	}	
+	
+	
+}

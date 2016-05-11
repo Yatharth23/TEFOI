@@ -1,0 +1,432 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Books</title>
+<link href="../css/books.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+<script src="../js/prefixfree.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+<style>
+@import url(http://fonts.googleapis.com/css?family=roboto:400,400italic,600,700,800);
+
+*,
+html,
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+form,
+label,
+fieldset,
+input,
+p,
+blockquote,
+th,
+td {
+  margin: 0;
+  padding: 0;
+}
+
+article,
+aside,
+figure,
+footer,
+header,
+hgroup,
+nav,
+section { display: block; }
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html { -webkit-font-smoothing: antialiased; }
+
+a {
+  color: #e1f4f5;
+  text-decoration: none;
+}
+
+a:hover { color: #BA0707; }
+
+body {
+  color: #e1f4f5;
+  font-family:Verdana, Geneva, sans-serif;
+  font-size:12px;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1;
+  width: 100%;
+}
+
+nav {
+  display: block;
+  background-color:#FC6D58;
+}
+
+.menu { display: block; }
+
+.menu li {
+  display: inline-block;
+  position: relative;
+  z-index: 100;
+  
+}
+
+.menu li:first-child { margin-left: 0; }
+
+.menu li a {
+  font-weight: 600;
+  text-decoration: none;
+  padding: 27px 45px;
+  display: block;
+  color: #FFF;
+  transition: all 0.2s ease-in-out 0s;
+}
+
+.menu li a:hover,
+.menu li:hover>a {
+  color: #000;
+  background: #FC6D58;
+}
+
+.menu ul {
+  visibility: hidden;
+  opacity: 0;
+  margin: 0;
+  padding: 0;
+  width: 170px;
+  position: absolute;
+  left: 0px;
+  background: #fff;
+  z-index: 99;
+  transform: translate(0, 20px);
+  transition: all 0.2s ease-out;
+}
+
+.menu ul:after {
+  bottom: 100%;
+  left: 20%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-bottom-color: #fff;
+  border-width: 6px;
+  margin-left: -6px;
+}
+
+.menu ul li {
+  display: block;
+  float: none;
+  background: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul li a {
+  font-size: 12px;
+  font-weight: normal;
+  display: block;
+  color: #797979;
+  background: #fff;
+}
+
+.menu ul li a:hover,
+.menu ul li:hover>a {
+  background: #FC6D58;
+  color: #fff;
+}
+
+.menu li:hover>ul {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.menu ul ul {
+  left: 169px;
+  top: 0px;
+  visibility: hidden;
+  opacity: 0;
+  transform: translate(20px, 20px);
+  transition: all 0.2s ease-out;
+}
+
+.menu ul ul:after {
+  left: -6px;
+  top: 10%;
+  border: solid transparent;
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  pointer-events: none;
+  border-color: rgba(255, 255, 255, 0);
+  border-right-color: #fff;
+  border-width: 6px;
+  margin-top: -6px;
+}
+
+.menu li>ul ul:hover {
+  visibility: visible;
+  opacity: 1;
+  transform: translate(0, 0);
+}
+
+.responsive-menu {
+  display: none;
+  width: 100%;
+  padding: 20px 15px;
+  background: #E95546;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.responsive-menu:hover {
+  background: #E95546;
+  color: #fff;
+  text-decoration: none;
+}
+
+@media (min-width: 801px) and (max-width: 979px) {
+
+.menu{
+	background: #FC6D58;
+	margin-top:7px;
+	}
+
+.mainWrap { width:100%;
+ }
+
+.menu ul { top: 7px;
+ }
+
+.menu ul li{width:10%;}
+
+.menu li a { font-size:10px;
+  padding: 20px 5px;
+  color:#FFF;
+ }
+
+.menu li a:hover{
+	color:#000;
+	}
+
+}
+ @media (max-width: 800px) {
+
+.mainWrap {
+  width: auto;
+  padding: 50px 20px;
+}
+
+.menu { display: none; }
+
+.responsive-menu { display: block; }
+
+nav {
+  margin: 0;
+  background: none;
+}
+
+.menu li {
+  display: block;
+  margin: 0;
+}
+
+.menu li a {
+  background: #fff;
+  color: #797979;
+}
+
+.menu li a:hover,
+.menu li:hover>a {
+  background: #FC6D58;
+  color: #fff;
+}
+
+.menu ul {
+  visibility: hidden;
+  opacity: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: initial;
+}
+
+.menu li:hover>ul {
+  visibility: visible;
+  opacity: 1;
+  position: relative;
+  transform: initial;
+}
+
+.menu ul ul {
+  left: 0;
+  transform: initial;
+}
+
+.menu li>ul ul:hover { transform: initial; }
+}
+</style>
+
+</head>
+
+<body>
+<div class="big_container">
+<div class="menu2">
+<nav> <a id="resp-menu" class="responsive-menu" href="#"><i class="fa fa-reorder"></i> Menu</a>
+  <ul class="menu">
+    <li><a class="homer" href="index.html"><i class="fa fa-home"></i>HOME</a>
+     </li>
+            <li><a  href="calender.html"><i class="fa fa-envelope"></i>ASHRAM CALENDER/DAILY SCHEDULE </a></li>
+    <li><a  href="books.html"><i class="fa fa-tags"></i>BOOKS</a>
+        </li>
+    <li><a  href="quotations.html"><i class="fa fa-camera"></i>QUOTES BY GURUJI</a>
+        </li>
+    <li><a  href="upcoming_events.html"><i class="fa fa-user"></i>UPCOMING EVENTS</a></li>
+    
+    <li><a  href="contact_us.html"><i class="fa fa-envelope"></i>CONTACT US</a></li>
+  </ul>
+</nav>
+<div class="jquery-script-ads" align="center"><script type="text/javascript"><!--
+google_ad_client = "ca-pub-2783044520727903";
+/* jQuery_demo */
+google_ad_slot = "2780937993";
+google_ad_width = 728;
+google_ad_height = 90;
+//-->
+</script>
+<script type="text/javascript"
+src="http://pagead2.googlesyndication.com/pagead/show_ads.js">
+</script></div>
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script> 
+<script>
+$(document).ready(function(){ 
+	var touch 	= $('#resp-menu');
+	var menu 	= $('.menu');
+ 
+	$(touch).on('click', function(e) {
+		e.preventDefault();
+		menu.slideToggle();
+	});
+	
+	$(window).resize(function(){
+		var w = $(window).width();
+		if(w > 767 && menu.is(':hidden')) {
+			menu.removeAttr('style');
+		}
+	});
+	
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+</div>
+<div class="heading">Publications of Third Eye Foundation of India</div>
+<div class="txt_container">
+<div class="heading1">1. Third Eye and Kundalini</div>
+<div class="img_box"></div>
+<div class="txt">
+Third Eye and Kundalini is one of the most sensational accounts of the transformation of Dr. B.S.Goel from dust to divinity from mortality to immortality and from nothingness to everything. It contains firsthand experience of Third Eye which are perhaps not available in any modern writing presented in modern times on the subject.<br>
+Third Eye and Kundalini is a reaffirmation of the timeless yogic truth of all religions of the world that the grace of Guru/God can descend on anyone pursuing the path of spirituality and further, that once this grace descends, the sadhaka (spiritual aspirant) will be lifted automatically from the lowest plane of most gross existence to the highest plane of Sat-Chit-Anand, a state of pure Consciousness
+</div>
+</div>
+<div class="txt_container">
+<div class="heading1">2. Gyan Netra Evam Kundalini</div>
+<div class="img_box"></div>
+<div class="txt">
+Gyan Netra Evam Kundalini is the Hindi translation of the book 'Third Eye of Kundalini' and is one of the most sensational accounts of the transformation of Dr. B.S.Goel from dust to divinity from mortality to immortality and from nothingness to everything. It contains firsthand experience of Third Eye which are perhaps not available in any modern writing presented in modern times on the subject.<br><br>
+Gyan Netra Evam Kundalini is a reaffirmation of the timeless yogic truth of all religions of the world that the grace of Guru/God can descend on anyone pursuing the path of spirituality and further, that once this grace descends, the sadhaka (spiritual aspirant) will be lifted automatically from the lowest plane of most gross existence to the highest plane of Sat-Chit-Anand, a state of pure Consciousness.</div>
+</div>
+<div class="txt_container">
+<div class="heading1">3. Psycho-Analysis & Meditation</div>
+<div class="img_box"></div>
+<div class="txt">
+Being an outcome of deep personal experiences of not only western classical psycho-analysis but also of intense meditational experiences leading to God realisation, this is a unique book containing a blend of best knowledge on mind and individual consciousness (bound soul) produced in the East or West.<br><br>
+The book is not a routine research study produced though the reading of primary or secondary material on western psycho-analysts like Freud, Jung, Adler and others or even many books and treatises of eastern saints and yogis like Patanjali, Gherand and others on Yogsadhana. It is the direct outcome of personal experiences of intense psychic suffering and continuous inner search for peace and happiness for long years resulting inner search for peace and happiness for long years resulting in the successful achievement of the finest and final goal of life.</div>
+</div>
+<div class="txt_container">
+<div class="heading1">4. Psycho-Analysis & Meditation, Certain Related Essays</div>
+<div class="img_box"></div>
+<div class="txt">
+The book includes 21 essays which were written on the basis of numerous experiences and insights gained during the twin processes of psycho-analysis and meditation and also after the divine experiences of opening o the THIRD EYE and the activation of the KUNDALINI.</div>
+</div>
+<div class="txt_container">
+<div class="heading1">5. Shrimad Bhagawad Geeta (English)</div>
+<div class="img_box"></div>
+<div class="txt">
+Shrimad Bhagawad Geeta : The present commentary on Shrimad Bhagawad Geeta is unique in the sense that<br><br>
+(a) it is written by one who has experienced the inner battle of Kurukshetra and seen all aspects of it.<br>
+(b) it is written in the most modern and easily understandable psychological language of our times.<br>
+(c) It is more compact and purposeful, as the entire gist of each chapter is woven around a few shlokas, and the shlokas have been interpreted in terms of emotional and spiritual problems and their understanding.</div>
+</div>
+<div class="txt_container">
+<div class="heading1">6. Shrimad Bhagawad Geeta (Hindi)</div>
+<div class="img_box"></div>
+<div class="txt">
+Shrimad Bhagawad Geeta (Hindi) : Shrimad Bhagawad Geeta is the Hindi translation of the book 'Shrimad Bhagawad Geeta' (English). The present commentary on Shrimad Bhagawad Geeta is unique in the sense that<br><br>
+(a) it is written by one who has experienced the inner battle of Kurukshetra and seen all aspects of it.<br>
+(b) it is written in the most modern and easily understandable psychological language of our times.<br>
+(c) It is more compact and purposeful, as the entire gist of each chapter is woven around a few shlokas, and the shlokas have been interpreted in terms of emotional and spiritual problems and their understanding.</div>
+</div>
+<div class="txt_container">
+<div class="heading1">7. Kundalini - The Liberating Force (English)</div>
+<div class="img_box"></div>
+<div class="txt">
+This book is divided into three parts. The first part contains discourses on Kundalini by Shri Siddheshwar Baba delivered between 1992 and 1997 during meditation camps held at Siddheshwar Ashram. The second part contains clarifications given by Gurudev to the queries raised by his devotees and the third part offers salutations to the 'Guru' who makes the awakening of the Kundalini and the attainment of liberation possible.<br><br>
+This book will be of immense help to spiritual seekers and psychic suffers. It will interest the lay readers who will gain solace and peace with knowledge of Kundalini, the liberating force.</div>
+</div>
+<div class="txt_container">
+<div class="heading1">8. Tera Tuzhko Arpan</div>
+<div class="img_box"></div>
+<div class="txt">
+Tera Tuzhko Arpan is the book written by one of the disciple of Dr. B.S.Goel (now known as Shri Siddheshwar Baba) on her spiritual experiences. This book is great source of motivation for the spiritual seekers.</div>
+</div>
+<div class="txt_container">
+<div class="heading1">9. Dhyan Yog</div>
+<div class="img_box"></div>
+<div class="txt">
+Dhyan Yog is basically the Hindi translation of some of the chapters from Psycho-analysis and Meditation. It contains the main basic requirements for a Sadhaka who is practicing or wants to practice Yoga and Meditation. It is the direct outcome of personal experiences of intense psychic suffering and continuous inner search for peace and happiness for long years resulting inner search for peace and happiness for long years resulting in the successful achievement of the finest and final goal of life.</div>
+</div>
+<div class="txt_container">
+<div class="heading1">10. Beams of Light</div>
+<div class="img_box"></div>
+<div class="txt">
+“Beams of Light” is a book containing thirty-one essays on spirituality and God. Throughout the book, there is an undercurrent of Indian culture, philosophy and the ancient concept of Guru. These essays are unique in the sense that they are firsthand accounts and experiences at a personal level between an ordinary mortal and a Siddh God-realised Guru. It is in this particular sense that the book stands out from others. It must be understood once for all that a real God-realised Guru/Yogi is Himself the “Beam of Light” in this Kaliyuga that is steeped deeply in mounds of darkness all around. The book contains spiritual wisdom from this “Beam of Light”, viz., the Sad Guru and therefore appropriately titled as “Beams of Light”. It can be considered to be analogous to Shrimad Bhagvad Geeta, wherein Yogeshwar Lord Krishna, the Guru of Gurus, gives an enlightening discourse to his friend and disciple, Arjuna, who is caught in the cobwebs of Mayaic delusion. Just as Bhagwan Krishna removed these cobwebs step by step, “Beams of Light” is a dialogue between a real genuine Guru and an ignorant person and removes his ignorance similarly. It is to be hoped that the book would serve the mankind, in general, in this ignorance ridden world and show it the real way to external liberation/Moksha. This particular book also carries along with it the blessings of Parmeshthi Bhagwaan Shri Sathya Sai Baba, that is to say, it has been personally blessed by Him. This fact further enhances the authenticity of this work!.</div>
+</div>
+</div>
+</body>
+</html>
